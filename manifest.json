@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Navigation",
+  "version": "1.0",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "viewer.html",
+        "viewer.js",
+        "sample.pdf",
+        "styles.css",
+        "pdf/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
