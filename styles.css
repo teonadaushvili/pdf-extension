@@ -3,7 +3,38 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#viewer {
+.toolbar {
+    padding: 10px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+#pdf-container {
+    position: relative;
+    display: inline-block;
+}
+
+#pdf-canvas {
+    display: block;
+}
+
+#text-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
-    height: 100px;
+    height: 100%;
+
+    pointer-events: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+
+    background: transparent;
 }
